@@ -1,0 +1,26 @@
+{
+  "name": "kuroi-solo",
+  "version": "2.0.0",
+  "description": "CSS compiler for the Kuroi system",
+  "scripts": {
+    "build": "sass src/scss/kuroi-solo.scss css/kuroi-solo.css --style=expanded --no-source-map",
+    "watch": "sass src/scss/kuroi-solo.scss css/kuroi-solo.css --style=expanded --source-map --watch",
+    "copyLang": "cp -r lang '/home/dave/Code/Foundry 11 Workspace/Data/systems/kuroi-solo/lang/' ",
+    "copyCSS": "cp -r css '/home/dave/Code/Foundry 11 Workspace/Data/systems/kuroi-solo/' ",
+    "copyAssets": "cp -r assets '/home/dave/Code/Foundry 11 Workspace/Data/systems/kuroi-solo/' ",
+    "copyModule": "cp -r module '/home/dave/Code/Foundry 11 Workspace/Data/systems/kuroi-solo/' ",
+    "copyPacks": "cp -r packs '/home/dave/Code/Foundry 11 Workspace/Data/systems/kuroi-solo/' ",
+    "copyTemplates": "cp -r templates '/home/dave/Code/Foundry 11 Workspace/Data/systems/kuroi-solo/' ",
+    "copyJson": "cp -r system.json '/home/dave/Code/Foundry 11 Workspace/Data/systems/kuroi-solo/' && cp -r template.json '/home/dave/Code/Foundry 11 Workspace/Data/systems/kuroi-solo/' ",
+    "copy" : "npm run copyLang && npm run copyCSS && npm run copyAssets && npm run copyModule && npm run copyPacks && npm run copyJson && npm run copyTemplates"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ],
+  "author": "Asacolips",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
+}
